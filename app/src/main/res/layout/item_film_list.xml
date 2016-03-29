@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_film_list_item">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/film_list_item_height"
+        android:layout_marginLeft="16.0dip">
+
+        <RelativeLayout
+            android:id="@+id/layout_film_preview"
+            android:layout_width="76.0dip"
+            android:layout_height="106.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip">
+
+            <ImageView
+                android:id="@+id/iv_film_preview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+              />
+
+            <ImageView
+                android:id="@+id/btn_film_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_pre_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="29.0dip"
+            android:layout_alignBottom="@id/layout_film_preview"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:background="@drawable/moive_list_buy_bg"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="#ff36aee0"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/layout_film_preview"
+            android:layout_toLeftOf="@id/btn_pre_sale"
+            android:layout_toRightOf="@id/layout_film_preview"
+            android:singleLine="true"
+            android:text="电影名称"
+            android:textColor="@color/color_film_list_item_actor_name_txt"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tv_actor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_date"
+            android:layout_toLeftOf="@id/btn_pre_sale"
+            android:layout_toRightOf="@id/layout_film_preview"
+            android:singleLine="true"
+            android:text="演员:吉泽明步"
+            android:textColor="@color/color_film_list_item_actor_name_txt"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:id="@+id/tv_sub_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_actor_name"
+            android:layout_toRightOf="@id/layout_film_preview"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="14.0dip"
+                android:layout_weight="0.0"
+                android:src="@drawable/sub_title_dot_left" />
+
+            <TextView
+                android:id="@id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="14.0dip"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:text="听说你结婚的消息,我好难过"
+                android:textColor="@color/color_film_list_item_sub_name_txt"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="14.0dip"
+                android:layout_weight="0.0"
+                android:src="@drawable/sub_title_dot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_sub_title_layout"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/layout_film_preview"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:text="影评题目"
+                android:textColor="@color/color_film_list_item_name_txt"
+                android:textSize="19.0sp" />
+
+            <TextView
+                android:id="@+id/tv_like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3.0dip"
+                android:singleLine="true"
+                android:textColor="@color/common_yellow"
+                android:textSize="16.0sp"
+                android:textStyle="bold|italic"
+                android:visibility="visible" />
+
+
+
+            <ImageView
+                android:id="@+id/iv_score_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:src="@drawable/icon_score_good"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_score_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16.0dip"
+                android:singleLine="true"
+                android:textColor="@color/c1"
+                android:textSize="16.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dividing_line" />
+    </RelativeLayout>
+</RelativeLayout>

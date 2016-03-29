@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-gif-drawable-1.1.8" />
+            <option value="$PROJECT_DIR$/animtabsview" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/beautifulparallax-1.0.0" />
+            <option value="$PROJECT_DIR$/carpaccio-1.0.2.7" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library_SlidingMenu" />
+            <option value="$PROJECT_DIR$/pagerslidingtabstrip-1.0.1" />
+            <option value="$PROJECT_DIR$/pinyinSearch" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

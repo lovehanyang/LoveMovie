@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_content_bg">
+
+    <ListView
+        android:id="@+id/tab_cinema_pinnedheader_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="-16.0dip"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="1.0px"
+        android:listSelector="@drawable/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_content_bg"
+        android:paddingBottom="16.0dip">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="@dimen/common_container_content_gap"
+            android:layout_marginRight="@dimen/common_container_content_gap"
+            android:layout_marginTop="@dimen/common_container_content_gap"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search_film"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="8.0"
+                android:background="@drawable/bg_search_et"
+                android:drawableLeft="@drawable/search_cinema"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/search_key_word_is_empty"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:textColor="@color/c1" />
+
+            <Button
+                android:id="@+id/btn_search_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@drawable/bg_search_btn"
+                android:text="@string/search_button"
+                android:textColor="@color/c1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/tab_cinema_pinnedheader_list_view"
+        android:layout_marginTop="66.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tips_common_no_data"
+            android:textColor="@color/c3"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/icon_no_data" />
+    </RelativeLayout>
+</RelativeLayout>

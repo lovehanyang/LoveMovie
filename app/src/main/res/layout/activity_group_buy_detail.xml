@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_btn_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/film_detail_buy_ticket_bg"
+        android:text="@string/group_detail_buy_btn"
+        android:textColor="@color/c1"
+        android:textSize="@dimen/t1" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_buy"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_content_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_gourp_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_container_content_gap"
+                android:paddingRight="@dimen/common_container_content_gap">
+
+                <TextView
+                    android:id="@+id/tv_name_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t2" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_weight="0.0">
+
+                    <TextView
+                        android:id="@+id/tv_single_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_red"
+                        android:textSize="@dimen/t1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_single_price"
+                        android:layout_gravity="bottom"
+                        android:layout_toRightOf="@id/tv_single_price"
+                        android:text="@string/yuan"
+                        android:textColor="@color/common_red"
+                        android:textSize="@dimen/t6" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/common_container_content_gap"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_container_content_gap"
+                android:paddingRight="@dimen/common_container_content_gap"
+                android:text="@string/group_detail_desc_txt"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/t3" />
+
+            <View style="@style/common_divider_line" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_container_content_gap"
+                android:paddingRight="@dimen/common_container_content_gap"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/t5" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/net_loading"
+        layout="@layout/item_net_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</RelativeLayout>

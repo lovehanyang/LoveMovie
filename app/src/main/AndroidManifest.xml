@@ -1,0 +1,201 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lanou.lovemovie">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 写入外部设备 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 记录视频和音频 -->
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:name=".application.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="2wDhwgrzbFxt3G4EPTXQlXPF" />
+
+
+        <activity
+            android:name=".dock.TabHostHomeActivity"
+            android:theme="@style/HYTheme.Theme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dock.chat.chatroomselect.ChatMovie"
+            android:theme="@style/AppCompatTheme" />
+
+        <activity android:name=".dock.listen.ListenMovie" />
+        <activity android:name=".dock.listen.waterfall.MusicPlayActivity" />
+        <activity android:name=".dock.watch.WatchActivity.WatchMovie" />
+        <activity
+            android:name=".dock.read.kmshack.newsstand.ReadMovie"
+            android:theme="@style/TransparentTheme" />
+        <activity android:name=".dock.personalcenter.setting.AboutUs" />
+        <activity android:name=".dock.watch.WatchActivity.MovieDetails" />
+
+        <activity
+            android:name=".dock.listen.musicplayer.activity.MainContentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".welcome.selectlocation.citylist.CityList" />
+        <activity android:name=".welcome.selectlocation.citylist.searchactivity" />
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".dock.listen.musicplayer.activity.MusicListSearchActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".selectposition.activity.ChooesSeatActivity" />
+        <activity android:name=".dock.watch.VideoPlayer.VideoList" />
+        <activity
+            android:name=".dock.watch.VideoPlayer.MVPlayer"
+            android:screenOrientation="landscape" />
+
+
+        <service
+            android:name=".dock.listen.musicplayer.service.MediaService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.lanou.lovemovie.dock.listen.musicplayer.service" />
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".dock.watch.WatchActivity.CommingSoonMovie" />
+        <activity android:name=".dock.watch.WatchActivity.HotMovie" />
+
+        <activity android:name=".dock.buytickets.OrderDetail" />
+        <activity android:name=".dock.buytickets.OrderTickets" />
+        <activity android:name=".dock.personalcenter.login.FeedBackActivity" />
+        <activity android:name=".dock.personalcenter.login.LoginActivity" />
+        <activity android:name=".dock.personalcenter.login.RegisterActivity" />
+        <activity android:name=".dock.personalcenter.login.SettingActivity" />
+        <activity android:name=".dock.personalcenter.QRCodeScan" />
+        <activity android:name=".dock.buytickets.PaySuccessActivity" />
+        <activity
+            android:name=".dock.personalcenter.login.LoginChoose"
+            android:theme="@style/lovehanyang_actionsheet" />
+        <activity android:name=".dock.read.MovieDetails" />
+
+
+        <activity
+            android:name=".dock.chat.HXChat.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".dock.chat.HXChat.activity.LoginActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.RegisterActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.ChatActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.AddContactActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.GroupDetailsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.GroupsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.ChatRoomDetailsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.NewGroupActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.ExitGroupDialog" />
+        <activity android:name=".dock.chat.HXChat.activity.GroupPickContactsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.NewFriendsMsgActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.ForwardMessageActivity" />
+        <activity
+            android:name=".dock.chat.HXChat.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity android:name=".dock.chat.HXChat.activity.ShowBigImage" />
+        <activity android:name=".dock.chat.HXChat.activity.ShowNormalFileActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.GroupBlacklistActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.PublicChatRoomsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.PublicGroupsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.PublicGroupsSeachActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.VoiceCallActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.VideoCallActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.GroupSimpleDetailActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.EditActivity" />
+        <activity
+            android:name=".dock.chat.HXChat.activity.ShowVideoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".dock.chat.HXChat.activity.ImageGridActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.RecorderVideoActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.RobotsActivity" />
+        <activity android:name=".dock.chat.HXChat.activity.UserProfileActivity" />
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="easemob-demo#chatdemoui" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

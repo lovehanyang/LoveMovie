@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_new"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/color_title_bar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正文"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/refresh_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/refresh" />
+
+        <ImageView
+            android:id="@+id/btn_back_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@mipmap/btn_back_new" />
+
+
+    </RelativeLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifloading_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:src="@drawable/wating"
+        android:visibility="visible" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/mark"
+                    android:layout_width="10dp"
+                    android:layout_height="27dp"
+                    android:background="@color/color_title_bar" />
+
+
+                <TextView
+                    android:id="@+id/news_detals_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/mark"
+                    android:text="这里是想请的标题"
+                    android:textColor="@android:color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/news_detals_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/news_detals_title"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="2015-8-4 23:23"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/news_detals_title"
+                    android:layout_toRightOf="@+id/news_detals_date"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="作者"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/movie_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/news_detals_date"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+
+                    android:id="@+id/details_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/author"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/movie_name"
+                    android:paddingTop="10dp"
+                    android:text="评分:9.0"
+                    android:textSize="10sp" />
+
+
+                <View
+                    style="@style/subscribe_seperate_line"
+                    android:layout_below="@+id/author"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp" />
+
+            </RelativeLayout>
+
+
+            <WebView
+                android:id="@+id/news_webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </WebView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

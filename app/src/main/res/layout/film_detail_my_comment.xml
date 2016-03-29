@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/common_container_content_gap" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/my_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/film_detail_comments_hot_comment"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/t2" />
+
+        <ImageButton
+            android:id="@+id/my_comment_modify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="@drawable/icon_film_detail_modify_comment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_container_content_gap"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/my_comment_captain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/film_detail_comments_item_comment"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/t5" />
+
+            <ImageView
+                android:id="@+id/my_comment_grade_icon"
+                android:layout_width="18.0dip"
+                android:layout_height="23.0dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/my_comment_captain"
+                android:src="@drawable/icon_film_bianbian_pressed_bg" />
+
+            <TextView
+                android:id="@+id/my_comment_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_toRightOf="@id/my_comment_grade_icon"
+                android:text="@string/film_detail_buxihuan"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/t5" />
+
+            <TextView
+                android:id="@+id/my_comment_like_reply_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/film_detail_my_comment_like_reply_num"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/t5" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_comment_comments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_comment_captain"
+            android:layout_marginTop="@dimen/common_container_content_gap"
+            android:text="一个悲伤的隐喻"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t5" />
+    </LinearLayout>
+
+</LinearLayout>

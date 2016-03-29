@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/color_title_bar" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="电影预告片"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+
+    </RelativeLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifloading2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/wating"
+        android:visibility="visible"
+        android:background="#ffffff"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

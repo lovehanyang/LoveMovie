@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fcf="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="180dp"
+        >
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fancy_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/change_location"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/location_now" />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/change_location"
+            android:layout_centerVertical="true"
+            android:id="@+id/adress_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="当前地点:"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/location"
+            android:layout_toRightOf="@+id/adress_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:paddingBottom="10dp"
+            android:text="未知"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+
+        <ImageView
+            android:id="@+id/personal_center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_center"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <!--是否传递点击事件事件给子布局android:splitMotionEvents="true"-->
+    <at.technikum.mti.fancycoverflow.FancyCoverFlow
+
+        android:layout_below="@+id/fancy_title"
+        android:id="@+id/fancyCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        fcf:maxRotation="80"
+        fcf:scaleDownGravity="0.1"
+        fcf:unselectedAlpha="0.1"
+        fcf:unselectedSaturation="0.0"
+        fcf:unselectedScale="0.1"
+
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hot_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/c6"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/grade_cup" />
+
+            <TextView
+                android:id="@+id/tv_hot_movie_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3.0dip"
+                android:drawablePadding="3.0dip"
+                android:text="正在加载"
+                android:textColor="@color/c6"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hot_movie_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/c6"
+            android:textSize="17sp" />
+
+        <include
+
+            layout="@layout/view_movie_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

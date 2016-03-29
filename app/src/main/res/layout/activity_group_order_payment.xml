@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_content_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/order_payment_lable_item" >
+
+                <TextView
+                    android:id="@id/tv_name_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t2" />
+
+                <TextView
+                    android:id="@id/tv_single_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_weight="0.0"
+                    android:text="0元"
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/t1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_payment_lable_item" >
+
+                <TextView
+                    android:id="@+id/tv_count_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:text="@string/number"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <com.tencent.movieticket.business.view.SelectCountView
+                    android:id="@+id/select_count_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/view_select_count_h"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/order_payment_lable_item"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/tv_phone_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/login_input_mobile"
+                    android:maxLength="11"
+                    android:minEms="6"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="@color/c3"
+                    android:textSize="@dimen/t3" />
+
+                <TextView
+                    android:id="@+id/tv_phone_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_phone_info"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/order_payment_lable_item" >
+
+                <TextView
+                    android:id="@+id/tv_need_pay_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:text="@string/order_payment_total_txt"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <TextView
+                    android:id="@+id/tv_need_pay_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_weight="0.0"
+                    android:text="0元"
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/t1" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/order_payment_lable"
+                android:text="@string/pay_type" />
+
+            <View style="@style/common_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ly_play_type_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="@dimen/common_container_content_gap"
+                android:layout_marginRight="@dimen/common_container_content_gap"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/yellow_btn_bg"
+                android:gravity="center"
+                android:text="@string/order_payment_confirm_btn_txt"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/t8" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

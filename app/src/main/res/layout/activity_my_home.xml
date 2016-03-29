@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_content_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_content_bg">
+
+        <ImageView
+            android:id="@+id/iv_my_home_top_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="240.0dip"
+            android:background="@drawable/my_top_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pic"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180.0dip"
+            android:background="@drawable/circle_head_bg">
+
+            <ImageView
+                android:id="@+id/iv_my_home_head"
+                android:layout_width="85.0dip"
+                android:layout_height="85.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/head" />
+
+            <ImageView
+                android:id="@+id/iv_my_home_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="60.0dip"
+                android:background="@drawable/icon_my_home_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_home_center"
+            android:layout_width="wrap_content"
+            android:layout_height="85.0dip"
+            android:layout_below="@id/iv_my_home_top_bg">
+
+
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/t3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_my_home_center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/color_dividing_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_movie_ticket"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/selector_common_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_my_home_piao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/my_ticket"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <RelativeLayout
+                    android:id="@+id/my_movie_ticket_comment_tip_lay"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@drawable/icon_right_allow" />
+            </LinearLayout>
+
+            <View style="@style/common_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_qr_code"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/selector_common_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_my_home_hongbao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="二维码扫描"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <RelativeLayout
+                    android:id="@+id/my_hong_bao_tip_lay"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@drawable/icon_right_allow" />
+            </LinearLayout>
+
+            <View style="@style/common_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_collection"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_my_home_vip_code_exchange" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="收藏"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@drawable/icon_right_allow" />
+            </LinearLayout>
+
+            <View style="@style/common_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/selector_common_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_my_home_setting" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/my_setting"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/t3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@drawable/icon_right_allow" />
+            </LinearLayout>
+
+            <View style="@style/common_divider_line" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

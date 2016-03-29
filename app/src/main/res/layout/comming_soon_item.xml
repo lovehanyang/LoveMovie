@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/comming_movie_pic"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:src="@mipmap/movie1"
+            android:scaleType="fitXY"
+
+            />
+
+        <TextView
+            android:layout_below="@id/comming_movie_pic"
+            android:id="@+id/comming_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="电影名称"/>
+
+        <TextView
+            android:layout_below="@id/comming_movie_name"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/comming_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="上映日期"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

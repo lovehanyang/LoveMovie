@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_content_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="35.0dip"
+    android:paddingTop="15.0dip">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_content_bg" />
+
+    <ImageView
+
+        android:id="@+id/iv_dialog_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:src="@drawable/icon_film_detail_arrow_down" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_weixin"
+        android:layout_width="250.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/border_login_weixin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/icon_login_weixin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信登录    "
+            android:textColor="@color/c1"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_qq"
+        android:layout_width="250.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/border_login_qq"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/icon_login_qq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ登录      "
+            android:textColor="@color/c1"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_sina"
+        android:layout_width="250.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/border_login_sina"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/icon_login_sina" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博登录    "
+            android:textColor="@color/c1"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_phone"
+        android:layout_width="250.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/bg_my_btn_yellow"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/icon_login_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号登录"
+            android:textColor="@color/c1"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_content_bg" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/item_net_loading" layout="@layout/item_loading_inside" />
+    <include android:id="@+id/item_net_error" layout="@layout/item_error_inside" />
+    <include android:id="@+id/item_no_data" layout="@layout/item_no_data_inside" />
+</FrameLayout>

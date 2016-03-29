@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/film_detail_head"
+        layout="@layout/film_detail_poster" />
+
+    <!--com.tencent.movieticket.business.view.FilmDetailSixGradeView
+        android:id="@+id/film_grade_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_detail_head"
+        android:visibility="gone" />
+
+    <com.tencent.movieticket.business.view.FilmDetailGradeShareCommentView
+        android:id="@+id/film_grade_share_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_grade_view"
+        android:paddingLeft="@dimen/common_container_content_gap"
+        android:paddingRight="@dimen/common_container_content_gap"
+        android:visibility="gone" /-->
+
+    <RelativeLayout
+        android:id="@+id/film_detail_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_detail_head"
+        android:background="@color/c4"
+        android:paddingLeft="@dimen/common_container_content_gap"
+        android:paddingRight="@dimen/common_container_content_gap"
+        android:paddingTop="20.0dip" >
+
+        <TextView
+            android:id="@+id/film_detail_director_captain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/film_detail_intro_director"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/t4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/film_detail_director_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/film_detail_director_captain"
+            android:layout_toRightOf="@id/film_detail_director_captain"
+            android:singleLine="true"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_captain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_detail_director_names"
+            android:layout_marginTop="14.0dip"
+            android:text="@string/film_detail_intro_actor"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/t4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/film_detail_actor_captain"
+            android:layout_toRightOf="@id/film_detail_actor_captain"
+            android:singleLine="true"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+
+        <TextView
+            android:id="@+id/film_detail_story_captain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_detail_actor_names"
+            android:layout_marginTop="14.0dip"
+            android:text="最热评论"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/t4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/film_detail_story_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/film_detail_story_captain"
+            android:layout_toRightOf="@id/film_detail_story_captain"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="2"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+
+        <RelativeLayout
+            android:id="@+id/film_detail_story_more_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_detail_story_content"
+            android:paddingBottom="@dimen/common_container_content_gap"
+            android:paddingTop="10.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_film_detail_story_more" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/film_detail_watch_points"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_detail_introduction"
+        android:layout_marginTop="@dimen/common_container_content_gap"
+        android:background="@color/c4"
+        android:paddingBottom="@dimen/common_container_content_gap"
+        android:paddingLeft="@dimen/common_container_content_gap"
+        android:paddingRight="0.0dip"
+        android:paddingTop="@dimen/common_container_content_gap"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/film_detail_watch_points_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/film_detail_watch_points"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/t2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/watch_points_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_detail_watch_points_title"
+            android:layout_marginTop="@dimen/film_detail_watch_points_gap"
+            android:background="@drawable/icon_film_detail_prize" />
+
+        <TextView
+            android:id="@+id/film_detail_prize_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/watch_points_prize"
+            android:layout_marginBottom="@dimen/film_detail_watch_points_gap"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="@dimen/common_container_content_gap"
+            android:layout_toRightOf="@id/watch_points_prize"
+            android:ellipsize="none"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@id/film_detail_prize_content"
+            android:layout_marginLeft="@dimen/common_container_content_gap"
+            android:background="@drawable/dash_line_horizontal"
+            android:layerType="software" />
+
+        <ImageView
+            android:id="@+id/watch_points_slide_lights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_detail_prize_content"
+            android:layout_marginTop="@dimen/film_detail_watch_points_gap"
+            android:background="@drawable/icon_film_detail_sidelights" />
+
+        <TextView
+            android:id="@+id/watch_pionts_slide_lights_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/watch_points_slide_lights"
+            android:layout_marginBottom="@dimen/film_detail_watch_points_gap"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="@dimen/common_container_content_gap"
+            android:layout_toRightOf="@id/watch_points_slide_lights"
+            android:ellipsize="none"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@+id/watch_pionts_slide_lights_content"
+            android:layout_marginLeft="@dimen/common_container_content_gap"
+            android:background="@drawable/dash_line_horizontal"
+            android:layerType="software" />
+
+        <ImageView
+            android:id="@+id/watch_pionts_script"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watch_pionts_slide_lights_content"
+            android:layout_marginTop="@dimen/film_detail_watch_points_gap"
+            android:background="@drawable/icon_film_detail_script" />
+
+        <TextView
+            android:id="@+id/watch_pionts_script_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/watch_pionts_script"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="@dimen/common_container_content_gap"
+            android:layout_toRightOf="@id/watch_pionts_script"
+            android:ellipsize="none"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/t4" />
+    </RelativeLayout>
+
+    <!--Gallery
+        android:id="@+id/film_detail_trailer_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_detail_watch_points"
+        android:layout_marginTop="@dimen/common_container_content_gap"
+        offsetX="@dimen/common_container_content_gap"
+        spacing="@dimen/film_detail_trailer_gallery_spacing"
+        android:background="@color/white" /-->
+
+    <include
+        android:id="@+id/film_detail_my_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_detail_watch_points"
+        android:layout_marginTop="@dimen/common_container_content_gap"
+        layout="@layout/film_detail_my_comment"
+        android:background="@color/white" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+
+
+
+    </ListView>
+
+
+</RelativeLayout>
+
+
+</ScrollView>

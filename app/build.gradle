@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.lanou.lovemovie"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile files('libs/gson-2.2.1.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+    compile files('libs/microlog4android-1.0.1.jar')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:design:22.2.1'
+    compile project(':animtabsview')
+    compile project(':library_SlidingMenu')
+    compile project(':library')
+    compile files('libs/systembartint-1.0.4.jar')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('libs/picasso-2.5.2.jar')
+    compile project(':pagerslidingtabstrip-1.0.1')
+    compile project(':android-gif-drawable-1.1.8')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':beautifulparallax-1.0.0')
+    compile project(':carpaccio-1.0.2.7')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile project(':pinyinSearch')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile files('libs/easemobchat_2.2.2.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+}

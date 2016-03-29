@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/blk_menubtn_prs"
+    android:insetBottom="0.8000001dip"
+    android:insetTop="0.8000001dip" />
+<!-- From: file:/Users/dllo/AndroidStudioProjects/LoveMovie/animtabsview/res/drawable/blk_menubtn_prs_inset.xml --><!-- From: file:/Users/dllo/AndroidStudioProjects/LoveMovie/animtabsview/build/intermediates/bundles/debug/res/drawable/blk_menubtn_prs_inset.xml -->

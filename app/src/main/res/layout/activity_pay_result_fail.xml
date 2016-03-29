@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_content_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:paddingBottom="26.0dip">
+
+            <ImageView
+                android:id="@+id/iv_pay_success_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22.0dip"
+                android:layout_marginTop="26.0dip"
+                android:src="@drawable/icon_pay_fail_top" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22.0dip"
+                android:layout_marginTop="26.0dip"
+                android:layout_toRightOf="@id/iv_pay_success_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_ticket_fail"
+                    android:textColor="@color/c1"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/order_ticket_fail_blame"
+                    android:textColor="@color/c2"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/order_ticket_fail_refund"
+            android:textColor="#ff888888"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62.0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back_buy"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_my_btn_yellow"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/order_ticket_rebuy"
+                android:textColor="@color/c1"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/btn_back_homepage"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/border_btn_write"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/order_ticket_return_home"
+                android:textColor="@color/c1"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

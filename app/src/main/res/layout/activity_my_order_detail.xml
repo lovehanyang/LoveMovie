@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/common_container_content_gap"
+        android:layout_marginRight="@dimen/common_container_content_gap"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="15.0dip"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="15.0dip"
+                android:src="@drawable/icon_close_white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="26.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="26.0dip">
+
+                    <ImageView
+                        android:id="@+id/iv_movie_pic"
+                        android:layout_width="118.0dip"
+                        android:layout_height="168.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_toRightOf="@id/iv_movie_pic"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_movie_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="12.0dip"
+                            android:singleLine="true"
+                            android:text="白幽灵传奇之绝"
+                            android:textColor="@color/c1"
+                            android:textSize="18.0sp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20.0dip"
+                            android:layout_marginTop="7.0dip"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="30.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10.0dip"
+                                android:background="@drawable/border_textview"
+                                android:gravity="center"
+                                android:text="3D"
+                                android:textColor="@color/c3"
+                                android:textSize="11.0sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="30.0dip"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/border_textview"
+                                android:gravity="center"
+                                android:text="原版"
+                                android:textColor="@color/c3"
+                                android:textSize="12.0sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_cinema_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-2.0dip"
+                            android:layout_marginTop="12.0dip"
+                            android:singleLine="true"
+                            android:text="首都电影院（西单店）"
+                            android:textColor="@color/c2"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_movie_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:singleLine="true"
+                            android:text="2015-5-5 周四 18:00"
+                            android:textColor="@color/c2"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_hall_seat"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:singleLine="false"
+                            android:text="5号厅，5排37座 5排37座 5排37座"
+                            android:textColor="@color/c2"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@drawable/my_dash_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tv_fail_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="@dimen/common_container_content_gap"
+                    android:layout_marginRight="@dimen/common_container_content_gap"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_detail_fail"
+                    android:textColor="@color/c2"
+                    android:textSize="20.0sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layout_order_key"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_detail_exchange_code"
+                        android:textColor="@color/c2"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_key"
+                        android:layout_width="0.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_weight="4.0"
+                        android:gravity="center_vertical"
+                        android:text="5454 5454 6454 5453"
+                        android:textColor="#ffff6c00"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_pass_key"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_detail_pwd"
+                        android:textColor="@color/c2"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pass_key"
+                        android:layout_width="0.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_weight="4.0"
+                        android:gravity="center_vertical"
+                        android:text="5454 5454"
+                        android:textColor="#ffff6c00"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_qr_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="18.0dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/stroke_1dp"
+                        android:orientation="horizontal"
+                        android:padding="1.0dip">
+
+                        <ImageView
+                            android:id="@+id/iv_qr_code"
+                            android:layout_width="@dimen/qr_code_size"
+                            android:layout_height="@dimen/qr_code_size"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18.0dip"
+                        android:text="@string/order_detail_qr_code_tips"
+                        android:textColor="@color/c6"
+                        android:textSize="@dimen/cinema_list_price_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="17.0dip">
+
+                <View
+                    android:layout_width="8.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_yuan_left" />
+
+                <View
+                    android:layout_width="8.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_yuan_right" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/my_dash_line"
+                        android:layerType="software" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="170.0dip"
+                android:background="@color/white"
+                android:paddingTop="26.0dip">
+
+                <ImageView
+                    android:id="@+id/iv_my_order_machine"
+                    android:layout_width="85.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_toLeftOf="@id/iv_my_order_machine"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_detail_delivery"
+                        android:textColor="@color/c1"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cinema_machine_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18.0dip"
+                        android:lines="2"
+                        android:text="请到底下一层取票"
+                        android:textColor="@color/c2"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cinema_machine_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="2"
+                        android:textColor="@color/c2"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:lines="2"
+                android:paddingBottom="20.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="18.0dip"
+                android:text="@string/order_detail_problem_guide"
+                android:textColor="#ffff6c00"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/common_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="130.0dip"
+                android:background="@color/white"
+                android:paddingBottom="16.0dip"
+                android:paddingTop="16.0dip">
+
+                <ImageView
+                    android:id="@+id/iv_my_order_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16.0dip"
+                    android:src="@drawable/icon_my_order_phone" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_marginRight="14.0dip"
+                    android:layout_toLeftOf="@id/iv_my_order_phone"
+                    android:background="@color/common_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_toLeftOf="@id/view_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3.0dip"
+                        android:text="@string/order_detail_cinema_title"
+                        android:textColor="@color/c1"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cinema_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-2.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:textColor="@color/c2"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cinema_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:textColor="@color/c2"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/common_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25.0dip"
+                    android:text="@string/order_detail_number"
+                    android:textColor="@color/c1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10000000000000000"
+                    android:textColor="@color/c2"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/common_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_detail_kind_reminder_title"
+                    android:textColor="@color/c1"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/order_detail_kind_reminder_1"
+                    android:textColor="@color/c2"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/order_detail_kind_reminder_2"
+                    android:textColor="@color/c2"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/share_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginRight="20.0dip"
+        android:src="@drawable/share_ticket" />
+
+
+
+    <ViewStub
+        android:id="@+id/view_styb_qrcode_big"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout="@layout/activity_my_order_detail_qrcode" />
+</FrameLayout>

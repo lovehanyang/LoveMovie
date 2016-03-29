@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LoveMovie.iml" filepath="$PROJECT_DIR$/LoveMovie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-gif-drawable-1.1.8/android-gif-drawable-1.1.8.iml" filepath="$PROJECT_DIR$/android-gif-drawable-1.1.8/android-gif-drawable-1.1.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animtabsview/animtabsview.iml" filepath="$PROJECT_DIR$/animtabsview/animtabsview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beautifulparallax-1.0.0/beautifulparallax-1.0.0.iml" filepath="$PROJECT_DIR$/beautifulparallax-1.0.0/beautifulparallax-1.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carpaccio-1.0.2.7/carpaccio-1.0.2.7.iml" filepath="$PROJECT_DIR$/carpaccio-1.0.2.7/carpaccio-1.0.2.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_SlidingMenu/library_SlidingMenu.iml" filepath="$PROJECT_DIR$/library_SlidingMenu/library_SlidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagerslidingtabstrip-1.0.1/pagerslidingtabstrip-1.0.1.iml" filepath="$PROJECT_DIR$/pagerslidingtabstrip-1.0.1/pagerslidingtabstrip-1.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyinSearch/pinyinSearch.iml" filepath="$PROJECT_DIR$/pinyinSearch/pinyinSearch.iml" />
+    </modules>
+  </component>
+</project>

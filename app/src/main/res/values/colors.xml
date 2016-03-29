@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c1">#ff333333</color>
+    <color name="common_content_bg">#fff5f5f5</color>
+    <color name="color_title_bar">#ff333333</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="c2">#ff666666</color>
+    <color name="c3">#ff999999</color>
+    <color name="c4">#ffffffff</color>
+    <color name="film_detail_buy_ticket_bg">#ffffd500</color>
+    <color name="common_line">#ffc9c9c9</color>
+    <color name="common_red">#ffe6644b</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_film_list_item_press_bg">#ffececec</color>
+    <color name="color_dividing_line">#ffd5d5d5</color>
+    <color name="c6">#ff888888</color>
+    <color name="color_F15151">#fff15151</color>
+    <color name="common_yellow">#ffffd550</color>
+    <color name="color_film_list_item_actor_name_txt">#ff999999</color>
+    <color name="color_film_list_item_sub_name_txt">#ff666666</color>
+    <color name="color_film_list_item_name_txt">#ff333333</color>
+    <color name="light_gray_trans">#aa8f8d8c</color>
+    <color name="half_transparent">#7f000000</color>
+    <color name="theme_color">#7f2E2E2E</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#7C4DFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="bottom_color">#00000000</color>
+
+
+    <color name="ll_list_bg_normal">#00000000</color>
+    <color name="ll_list_bg_press">#ffdddddd</color>
+    <color name="robhouse_dialog_list_normal">#ffffffff</color>
+    <color name="wb_title_text_disabled">#fffcb8a6</color>
+    <color name="wb_title_text_normal">#ffff6622</color>
+    <color name="wb_title_text_pressed">#ffcc5223</color>
+
+    <color name="reflection_default_to">#00000000</color>
+    <color name="city_search_bg">#fff2f2f2</color>
+    <color name="city_item_letter_color">#ff8c8c8c</color>
+    <color name="city_item_text_color">#ff5c5c5c</color>
+    <color name="uniform_black">#ff161616</color>
+    <color name="uniform_light_gray">#ff787878</color>
+    <color name="light_gray">#ff999999</color>
+    <color name="line_gray">#ffd7d7d7</color>
+    <color name="city_item_divider_color">#ffdddddc</color>
+    <color name="deep_gray">#ff333333</color>
+    <color name="inner_divider">#ffe1e1e1</color>
+    <color name="click_gray">#ffd9d9d9</color>
+
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="divider_color">#6fffffff</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="gray_normal">#666667</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+
+
+</resources>

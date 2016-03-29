@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/title_new"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/color_title_bar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正在热映"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+        <ImageView
+            android:id="@+id/refresh_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/refresh"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/btn_back_new"
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_new"
+            />
+
+
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifloading3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/wating"
+        android:visibility="visible"
+        android:background="#ffffff"
+        />
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/hotmovie_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+
+
+</LinearLayout>

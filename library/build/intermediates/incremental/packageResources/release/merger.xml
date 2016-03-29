@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/src/main/res"><file path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/src/main/res/values/attr.xml" qualifiers=""><declare-styleable name="FancyCoverFlow">
+        <attr format="float" name="unselectedAlpha"/>
+        <attr format="float" name="unselectedSaturation"/>
+        <attr format="float" name="unselectedScale"/>
+        <attr format="integer" name="maxRotation"/>
+        <attr format="float" name="scaleDownGravity"/>
+        <attr format="integer" name="actionDistance">
+            <enum name="auto" value="2147483647"/>
+        </attr>
+    </declare-styleable></file><file path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">FancyCoverFlow</string></file></source><source path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/build/generated/res/rs/release"/><source path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/build/generated/res/generated/release"/></dataSet><dataSet config="release"><source path="/Users/dllo/AndroidStudioProjects/LoveMovie/library/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="FancyCoverFlow"><attr format="float" name="unselectedAlpha"/><attr format="float" name="unselectedSaturation"/><attr format="float" name="unselectedScale"/><attr format="integer" name="maxRotation"/><attr format="float" name="scaleDownGravity"/><attr format="integer" name="actionDistance"><enum name="auto" value="2147483647"/></attr></declare-styleable></configuration></mergedItems></merger>

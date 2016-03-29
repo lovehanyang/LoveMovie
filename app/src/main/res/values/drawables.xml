@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="sched_list_line">#ff323232</item>
+    <item type="drawable" name="sched_switch_color_sel">#ffffc700</item>
+    <item type="drawable" name="sched_switch_color_unsel">#ff6f6f6f</item>
+    <item type="drawable" name="white">#ffffffff</item>
+</resources>

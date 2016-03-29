@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TabHost
+
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dp"
+                android:layout_above="@+id/rg_botnav"
+                android:background="#c6b2b2b2" />
+
+            <RadioGroup
+                android:id="@+id/rg_botnav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#2E2E2E"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dip"
+                android:paddingTop="6dip">
+
+                <RadioButton
+                    android:id="@+id/bn_watch"
+                    style="@style/util_bottombar_navigatebutton"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_watch_movie"
+                    android:text="看电影" />
+
+                <RadioButton
+                    android:id="@+id/bn_listen"
+                    style="@style/util_bottombar_navigatebutton"
+                    android:drawableTop="@drawable/tab_listen_movie"
+                    android:text="听电影" />
+
+                <RadioButton
+                    android:id="@+id/bn_read"
+
+                    style="@style/util_bottombar_navigatebutton"
+                    android:drawableTop="@drawable/tab_read_movie"
+                    android:text="读电影" />
+
+                <RadioButton
+                    android:id="@+id/bn_chat"
+                    style="@style/util_bottombar_navigatebutton"
+                    android:drawableTop="@drawable/tab_chat_movie"
+                    android:text="约电影" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>

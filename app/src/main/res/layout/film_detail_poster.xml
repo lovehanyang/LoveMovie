@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="340dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/film_poster_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/film_poster_img"
+                android:layout_width="fill_parent"
+                android:layout_height="270dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageButton
+
+                android:layout_centerInParent="true"
+                android:id="@+id/play_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15.0dip"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_play" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/heart"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="220dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <!--这块就是一个黑色背景-->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_below="@id/film_poster_img"
+            android:background="#2E2E2E" />
+
+    </LinearLayout>
+
+
+    <!--这个是一个网格-->
+    <ImageView
+        android:id="@+id/poster_texture"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/film_detail_poster_texture"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/film_detail_watch_type_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/film_poster_watch_bar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/common_container_content_gap"
+            android:layout_marginRight="@dimen/common_container_content_gap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/film_detail_remind_container"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="50dp"
+                    android:layout_weight="3.0">
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/film_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="类型"
+                        android:textColor="@color/c4"
+                        android:textSize="@dimen/t5" />
+                    <TextView
+                        android:id="@+id/data"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/c4"
+                        android:textSize="@dimen/t5"
+                        android:layout_toRightOf="@+id/film_type"
+                        android:text="时间"
+                        />
+
+                    <TextView
+                        android:id="@+id/film_detail_poster_film_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="这里是写电影的名称"
+                        android:textColor="@color/c4"
+                        android:textSize="@dimen/film_poster_film_name_text_size"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/buy_tickets"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/film_poster_watch_bar_btn_height"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/icon_round_rect_yellow"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/film_detail_remind_lay_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/selector_film_detail_remind" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="购票"
+                        android:textColor="#ffffd500"
+                        android:textSize="@dimen/t1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

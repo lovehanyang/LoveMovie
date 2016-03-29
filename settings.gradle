@@ -1,0 +1,3 @@
+include ':app', ':animtabsview', 'library', ':pagerslidingtabstrip-1.0.1', ':android-gif-drawable-1.1.8', ':beautifulparallax-1.0.0', ':carpaccio-1.0.2.7'
+include ':library_SlidingMenu'
+include ':pinyinSearch'
